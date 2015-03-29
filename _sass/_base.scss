@@ -65,7 +65,7 @@ ul, ol, dl, figure,
 }
 
 /*two columns*/
-.col-sm-8,.col-sm-2{
+.column-content,.column-sidebar{
   position:relative;
   min-height:1px;
   margin: 0px 15px;
@@ -73,14 +73,17 @@ ul, ol, dl, figure,
 
 
 @media screen and (min-width : $on-palm) {
-  .col-sm-8 {
+  .column-content {
     float:left;
-    width:65%;
+    width:80%;
+/*	margin: 0px 0px 0px 30px; */
+	margin: 0% 0% 0% 5%;
+		/*  top rit bot left */
   }
 
-  .col-sm-2 {
+  .column-sidebar {
     float:right;
-    width:25%;
+    width:15%;
   }
 }
 
@@ -146,7 +149,7 @@ a {
   }
 
   &:hover {
-    color: #669900; //$hover-color;
+    color:lighten($brand-top-color, 25%);
     text-decoration: underline;
   }
 }
@@ -220,7 +223,7 @@ pre {
 
 /**
  * Wrapper
- */
+
 .wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
@@ -237,7 +240,7 @@ pre {
     padding-left: $spacing-unit / 2;
   }
 }
-
+ */
 
 
 /**

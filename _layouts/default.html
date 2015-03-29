@@ -5,33 +5,21 @@
 
 <body>
 
-<div class="container">
+{% include header.html %}
 
-  {% include header.html %}
+<div>
+<div class="container column-content">
 
-  {% if site.default_column == "two" %}  
-
-  <div class="page-content col-sm-8">
+  <div class="page-content">
     {{ content }}
     {% include post_pagination.html %}
   </div>
-  {% include sidebar.html %}
-
-  {% else %}
-
-  <div class="page-content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </div>
-  {% include post_pagination.html %}
-
-  {% endif %}
-
-  {% include footer.html %}
 
 </div>
+{% include sidebar.html %}
+</div>
 
+{% include footer.html %}
 </body>
 
 </html>

@@ -2,16 +2,35 @@
  * Site header
  */
 .site-header {
-  //Positioning context for the mobile navigation icon
   position: relative;
+  background-color: $trim-color;
+  border-bottom: 1px solid $grey-color-light;
+  margin-bottom:10px;
+  
+}
+
+/**
+ * Site footer
+ */
+
+.site-footer {
+  clear: both;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  width:100%;
+  background-color: $trim-color;
+  border-top: 1px solid $grey-color-light;
+  color: azure;
+  font-size: 10px;
 }
 
 .site-title {
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 20px;
+  //line-height: 30px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  text-align:center;
+  //text-align:center;
   a{
     &,
     &:visited
@@ -24,42 +43,31 @@
 }
 
 .site-meta{
-  font-size: 20px;
-  line-height:56px;
+  font-size: 12px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  text-align:center; 
-  color: $grey-color;
+  color: azure;
 }
 
-.site-nav {
-  /*float: right;*/
-  line-height: 56px;
-  border-top: 1px solid $grey-color-light;
-  border-bottom: 1px solid $grey-color-light;
-  .menu-icon {
-    display: none;
-  }
+.site-nav {  
+  //border-top: 1px solid silver;
+  //border-bottom: 1px solid silver;
+  font-size: 16px;
+  color: silver;
 
   .page-link {
-    //color: $grey-color;
-	color: #708090;
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the first one
+	color: Cyan; 
 
     margin-left: 10px;
     margin-right: 10px;
-
   }
 
   a{
     text-decoration: none;
 
     &:hover {
-      color: $text-color;
+      color: white;
       text-decoration: none;
-      //font-weight: bold;
     }
   }
 
@@ -125,19 +133,7 @@
 }
 
 
-/**
- * Site footer
- */
 
-.site-footer {
-  clear: both;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid $grey-color-light;
-  margin: $spacing-unit 0; 
-  padding: $spacing-unit 0;
-  font-size: 14px;
-}
 
 
 
@@ -145,7 +141,7 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit 10px;
   strong { font-weight: bold; }
 
 }
