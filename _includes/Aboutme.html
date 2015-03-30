@@ -1,23 +1,18 @@
-<div class="sidebar-module about">
-  <h4>{{ site.locales[site.default_locale].Aboutme }}</h4>
+<div class="sidebar-module">
+  <h4>• About</h4>
   <img title="{{site.author}}" src="{{site.aboutme_photo}}" alt="{{site.author}}"/>
-  <span>{{site.aboutme}}</span>
+  <!--<span>{{site.aboutme}}</span>-->
+  <p>Java/.NET hacker who loves building SOA and real-time systems, DevOps geek, & functional-programming hipster.</p>
+  <p>I help large teams be nimble and agile, and help small teams punch well above their weight class.</p>
+  <p>Likes football, modernist literature, microbrews, and microcontrollers. Plays bass & draws (poorly). STEMinist.</p>
+  
+  
   <br />
 
-  {% if site.ShowContactInfo == "True" %}
-
-  You can contact me via:
-
-  {% if site.email != empty %}
-  <a href="mailto:{{site.email}}" title="mailto: {{site.email}}">Email</a> /
-  {% endif %}
-  {% if site.github_username != empty %}
-  <a href="https://github.com/{{site.github_username}}" title="GithubID: {{site.github_username}}">Github</a> /
-  {% endif %}
-  {% if site.twitter_username != empty %}
-  <a href="https://twitter.com/{{site.twitter_username}}" title="TwitterID: {{site.twitter_username}}">Twitter</a>
-  {% endif %}
-
-  {% endif %}
+  <div align="center">
+  <a href="https://twitter.com/val_to_string" title="TwitterID: {{site.twitter_username}}">Twitter</a>
+  &nbsp&nbsp•&nbsp&nbsp
+  <a href="https://github.com/valakkapeddi" title="GithubID: {{site.github_username}}">Github</a>
+  </div>  
 
 </div>
