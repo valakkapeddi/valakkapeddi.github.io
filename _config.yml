@@ -5,10 +5,8 @@ author: Val Akkapeddi
 email: Val Akkapeddi At Gmail dot com
 description: "Val Akkaped"
 keywords: "Val, Akkapeddi, programming, Java, .NET, microbrew"
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "valakkapeddi.github.io" # the base hostname & protocol for your site
-source: "/blog"
-
 ### Personal info and site tools info:
 twitter_username: val_to_string
 github_username:  valakkapeddi@gmail.com
