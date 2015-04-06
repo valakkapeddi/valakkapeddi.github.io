@@ -18,9 +18,9 @@ aboutme_photo: /blog/images/ironic.jpg
 
 
 ### Site setting:
-ShowContactInfo: "False" # Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown when ShowContactInfo == True
-default_column: "two" # blog style: two columns, if default_column != "two", you will see a one column blog.
-default_locale: "en" # blog sidebar language set, only include: English(en) and Chinese (cn)
+ShowContactInfo: "False" 
+default_column: "two" 
+default_locale: "en" 
 
 locales:
     en:
