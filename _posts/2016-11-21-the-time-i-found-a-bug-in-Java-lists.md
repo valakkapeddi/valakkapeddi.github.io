@@ -18,6 +18,7 @@ Digging deeper, we found what looks like a loophole in the implementation of Arr
 <!--more-->
 
 For starters, the code my cousin wrote looked something like the snippet below; also put the code up here: https://github.com/valakkapeddi/list_remove_bug.
+
 ```java
         private final List<String> arrayList = new ArrayList<>();
 
@@ -39,6 +40,7 @@ For starters, the code my cousin wrote looked something like the snippet below; 
 
          arrayList.stream().forEach(System.out::println);
 ```
+
 If you try to remove an earlier element (such as "a"-"d"), the ConcurrentModificationException gets raised as excepted.  So why does this happen?  It turns out that the check for comodification happens in the call to next(). When you remove either the last or next-to-last element, you hit the loophole; the Java runtime uses hasNext() to decide whether to call next() to try and retrieve the next element. hasNext() makes this determination by comparing the size of the list against the 'index' of the current element.  Since you've removed an element from the list, thereby reducing the size of the collection by one, the hasNext() check is cheated.  Java never calls next() for the "true" last element, and therefore doesn't check for comodification.
 
 It seems like this could be fixed if we checked for comodification in hasNext() - I wonder what the implications of that would be, other than the performance hit?
